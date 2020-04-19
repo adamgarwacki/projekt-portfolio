@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,37 +15,44 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <section class="header">
-        <h1>FRONT END DEVELOPER</h1>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <button>DOWIEDZ SIĘ WIĘCEJ</button>
-    </section>
-    <section class="menu">
-        <ul>
-            <li>O mnie</li>
-            <li>Portfolio</li>
-            <li>Kontakt</li>
-        </ul>
-    </section>
-    <section class="about-me">
+    <header>
+        <div class="header-content">
+            <h1>FRONT END DEVELOPER</h1>
+            <p>
+                HTML <span class="blue-dot">•</span> CSS <span class="blue-dot">•</span> JavaScript
+            </p>
+            <a href="#about-me" class="learn-more">DOWIEDZ SIĘ WIĘCEJ</a>
+        </div>
+    </header>
+
+    <menu>
+        <li><a href="#about-me">O mnie</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </menu>
+
+    <section id="about-me">
         <h2>O MNIE</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis atque rerum veniam blanditiis consequatur doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo, dignissimos doloremque?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis atque rerum veniam blanditiis consequatur
+            doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo,
+            dignissimos doloremque?
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis atque rerum veniam blanditiis consequatur doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo, dignissimos doloremque?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis atque rerum veniam blanditiis consequatur
+            doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo,
+            dignissimos doloremque?
         </p>
         <button>MOJE PORTFOLIO</button>
     </section>
-    <section class="portfolio">
+
+    <section id="portfolio">
         <h2>PORTFOLIO</h2>
     </section>
-    <section class="contact">
+
+    <section id="contact">
         <h2>KONTAKT</h2>
         <form>
             <input type="text" name="first-name" id="first-name">
@@ -52,5 +60,8 @@
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </form>
     </section>
+
+    <script> </script>
 </body>
+
 </html>
