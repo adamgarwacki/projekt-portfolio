@@ -1,6 +1,16 @@
 * {
-    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 70px;
+    height: 1px;
+    border: 0px;
+    background-color: #007bff;
 }
 
 section {
@@ -9,42 +19,44 @@ section {
     text-align: center;
 }
 
+.section-header {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    font-size: 1.9em;
+    color: #333;
+}
+
 .main-header {
     position: relative;
-
     width: 100%;
     height: 600px;
-
     background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.main-header > div > * {
-    text-align: center;
-}
-
-.main-header > div {
+.main-heading {
     position: absolute;
-
     width: 100%;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-h1 {
+.main-heading > h1 {
     margin: 0px;
     padding: 0px;
-
     color: #007bff;
     font-size: 4.2em;
+    text-transform: uppercase;
 }
 
-.main-header > div p {
+.main-heading > p {
     margin: 15px 0px 45px 0px;
 }
 
@@ -55,7 +67,7 @@ h1 {
 .button-anchor {
     padding: 12px;
     border: 1px solid #007bff;
-    color: #000000;
+    color: #333;
     text-decoration: none;
     transition: all 0.2s;
 }
@@ -87,22 +99,41 @@ menu li a {
     color: #fff;
 }
 
-#about-me img {
+
+.about-me img {
     border-radius: 50%;
 }
 
-#about-me p {
+.about-me p {
     margin: 30px;
     margin-left: 25%;
     width: 50%;
     color: #777;
 }
 
-#portfolio {
+.portfolio {
     background-color: #f2f1ed;
 }
 
-#portfolio > div {
+.portfolio-wrapper {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex-basis: 25%;
+    height: 200px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .portfolio > div {
     width: 80%;
     height: 600px;
     margin-left: 10%;
@@ -116,9 +147,9 @@ figure {
 
 figure img {
     width: 100%;
-}
+} */
 
-#contact {
+.contact {
     height: 400px;
 }
 
@@ -126,7 +157,7 @@ form {
     position: relative;
     width: 40%;
     margin-left: 30%;
-    font-size: 1.2em;
+    font-size: 18px;
 }
 
 input {
@@ -134,11 +165,11 @@ input {
     width: 49%;
 }
 
-#first-name {
+.first-name {
     left: 0px;
 }
 
-#e-mail {
+.e-mail {
     right: 0px;
 }
 
@@ -151,4 +182,18 @@ textarea {
 button.button-anchor {
     margin-top: 10px;
     background-color: #fff;
+    font-size: 16px;
+}
+
+.fab {
+    margin: 50px 20px 20px 20px;
+    font-size: 3em;
+    color: #007bff;
+}
+
+footer {
+    padding: 10px;
+    height: 80px;
+    background-color: #f2f1ed;
+    text-align: center;
 }
