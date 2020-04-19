@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
+    <header class="main-header">
+        <div>
             <h1>FRONT END DEVELOPER</h1>
             <p>
                 HTML <span class="blue-dot">•</span> CSS <span class="blue-dot">•</span> JavaScript
             </p>
-            <a href="#about-me" class="learn-more">DOWIEDZ SIĘ WIĘCEJ</a>
+            <a href="#about-me" class="button-anchor">DOWIEDZ SIĘ WIĘCEJ</a>
         </div>
     </header>
 
@@ -35,6 +35,7 @@
 
     <section id="about-me">
         <h2>O MNIE</h2>
+        <img src="img/about.jpg" alt="My-photo">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis atque rerum veniam blanditiis consequatur
             doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo,
@@ -45,19 +46,58 @@
             doloribus exercitationem non. Ducimus et eum autem nesciunt sapiente maiores excepturi ea atque! Nemo,
             dignissimos doloremque?
         </p>
-        <button>MOJE PORTFOLIO</button>
+        <a href="#portfolio" class="button-anchor">MOJE PORTFOLIO</a>
     </section>
 
     <section id="portfolio">
         <h2>PORTFOLIO</h2>
+        <div>
+            <figure>
+                <img src="img/portfolio/photo-1.jpg" alt="image 1">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-2.jpg" alt="image 2">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-3.jpg" alt="image 3">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-4.jpg" alt="image 4">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-5.jpg" alt="image 5">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-6.jpg" alt="image 6">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-7.jpg" alt="image 7">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-8.jpg" alt="image 8">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-9.jpg" alt="image 9">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-10.jpg" alt="image 10">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-11.jpg" alt="image 11">
+            </figure>
+            <figure>
+                <img src="img/portfolio/photo-12.jpg" alt="image 12">
+            </figure>
+        </div>
     </section>
 
     <section id="contact">
         <h2>KONTAKT</h2>
         <form>
-            <input type="text" name="first-name" id="first-name">
-            <input type="email" name="e-mail" id="e-mail">
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="text" name="first-name" id="first-name" placeholder="Imię">
+            <input type="email" name="e-mail" id="e-mail" placeholder="Adres e-mail"><br>
+            <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
+            <button type="submit" class="button-anchor">WYŚLIJ WIADOMOŚĆ</button>
         </form>
     </section>
 
