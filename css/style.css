@@ -1,8 +1,15 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
-header {
+section {
+    margin: 50px 0px 100px 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.main-header {
     position: relative;
 
     width: 100%;
@@ -14,11 +21,11 @@ header {
     background-position: center;
 }
 
-.header-content>* {
+.main-header > div > * {
     text-align: center;
 }
 
-.header-content {
+.main-header > div {
     position: absolute;
 
     width: 100%;
@@ -37,7 +44,7 @@ h1 {
     font-size: 4.2em;
 }
 
-.header-content p {
+.main-header > div p {
     margin: 15px 0px 45px 0px;
 }
 
@@ -45,28 +52,24 @@ h1 {
     color: #007bff;
 }
 
-.learn-more {
-    padding: 10px;
+.button-anchor {
+    padding: 12px;
     border: 1px solid #007bff;
     color: #000000;
     text-decoration: none;
     transition: all 0.2s;
 }
 
-.learn-more:hover {
+.button-anchor:hover {
     background-color: #007bff;
     color: rgb(233, 233, 233);
 }
 
 menu {
-    position: sticky;
-    top: 0px;
-}
-
-menu {
     display: flex;
     justify-content: space-evenly;
-
+    position: sticky;
+    top: 0px;
     margin: 0px;
     padding: 20px;
     background-color: #007bff;
@@ -79,7 +82,73 @@ menu li {
     text-align: center;
 }
 
-li  a {
+menu li a {
     text-decoration: none;
     color: #fff;
+}
+
+#about-me img {
+    border-radius: 50%;
+}
+
+#about-me p {
+    margin: 30px;
+    margin-left: 25%;
+    width: 50%;
+    color: #777;
+}
+
+#portfolio {
+    background-color: #f2f1ed;
+}
+
+#portfolio > div {
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+}
+
+figure {
+    display: inline-block;
+    margin: 0px;
+    width: 20%;
+}
+
+figure img {
+    width: 100%;
+}
+
+#contact {
+    height: 400px;
+}
+
+form {
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 1.2em;
+}
+
+input {
+    position: absolute;
+    width: 49%;
+}
+
+#first-name {
+    left: 0px;
+}
+
+#e-mail {
+    right: 0px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 5em;
+}
+
+button.button-anchor {
+    margin-top: 10px;
+    background-color: #fff;
 }
